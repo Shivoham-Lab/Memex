@@ -1,0 +1,39 @@
+{
+  "name": "memex",
+  "version": "1.0.0",
+  "description": "Locally hosted MCP server with web dashboard for multi-AI development",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build": "vite build --config vite.config.js",
+    "init": "node scripts/init.js",
+    "setup-ollama": "node scripts/setup-ollama.js",
+    "setup-tunnel": "node scripts/setup-tunnel.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "sql.js": "^1.12.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "octokit": "^4.1.2",
+    "simple-git": "^3.27.0",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.3.4",
+    "@vitejs/plugin-react": "^4.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.1",
+    "d3": "^7.9.0"
+  }
+}
